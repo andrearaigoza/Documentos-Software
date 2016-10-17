@@ -1,0 +1,1505 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	0)
+
+(object Class_Category "cadena de responsabilidad"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"57F687D400A7"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "Usuario"
+	    quid       	"57F688110100")
+	(object Class "CharacterMotor"
+	    quid       	"57F6897C036E"
+	    operations 	(list Operations
+		(object Operation "iniciarMovimiento"
+		    quid       	"57F6978301F5"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)))
+	(object Class "FPSInputController"
+	    quid       	"57F689BC002A"
+	    operations 	(list Operations
+		(object Operation "iniciarMovimiento"
+		    quid       	"57F6979E0325"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)))
+	(object Class "ThirdPersonController"
+	    quid       	"57F68A160371"
+	    operations 	(list Operations
+		(object Operation "iniciarMovimiento"
+		    quid       	"57F6978F0293"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)))
+	(object Class "PlatformInputController"
+	    quid       	"57F68B0000C5"
+	    operations 	(list Operations
+		(object Operation "iniciarMovimiento"
+		    quid       	"57F6981B010D"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)))
+	(object Class "ThirdPersonUserControl"
+	    quid       	"57F68BAC0024")
+	(object Class "CrossPlatformInput"
+	    quid       	"57F68C8102EE")
+	(object Class "AxisTouchButton"
+	    quid       	"57F68CB70190")
+	(object Class "ButtonHandler"
+	    quid       	"57F68CD1023C")
+	(object Class "CrossPlatformInputManage"
+	    quid       	"57F68D38018B")
+	(object Class "ThirdPersonCharacter"
+	    quid       	"57F68DF0028A"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"57F6948D0211"
+		    supplier   	"Logical View::cadena de responsabilidad::Characters"
+		    quidu      	"57F68EF80395")))
+	(object Class "FirstPersonCharacter"
+	    quid       	"57F68E690103"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"57F690490248"
+		    supplier   	"Logical View::cadena de responsabilidad::Characters"
+		    quidu      	"57F68EF80395")))
+	(object Class "FirstPersonControl"
+	    quid       	"57F68E7A0125")
+	(object Class "MouseLook"
+	    quid       	"57F68EA6014B")
+	(object Class "RigidBodyFirstPersonController"
+	    quid       	"57F68EB70133")
+	(object Class "Characters"
+	    quid       	"57F68EF80395")
+	(object Class "CharacterControllers"
+	    quid       	"57F68F9201A7"
+	    operations 	(list Operations
+		(object Operation "iniciarControl"
+		    quid       	"57F697380039"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)))
+	(object Association "$UNNAMED$0"
+	    quid       	"57F68FC70086"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"57F68FC701D7"
+		    supplier   	"Logical View::cadena de responsabilidad::ThirdPersonUserControl"
+		    quidu      	"57F68BAC0024"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$2"
+		    quid       	"57F68FC701DA"
+		    supplier   	"Logical View::cadena de responsabilidad::ThirdPersonCharacter"
+		    quidu      	"57F68DF0028A"
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)))
+	(object Association "$UNNAMED$3"
+	    quid       	"57F690140050"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"57F69014030F"
+		    supplier   	"Logical View::cadena de responsabilidad::MouseLook"
+		    quidu      	"57F68EA6014B"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$5"
+		    quid       	"57F690140312"
+		    supplier   	"Logical View::cadena de responsabilidad::FirstPersonControl"
+		    quidu      	"57F68E7A0125"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$6"
+	    quid       	"57F691FA00D3"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$7"
+		    quid       	"57F691FA02E8"
+		    supplier   	"Logical View::cadena de responsabilidad::CharacterMotor"
+		    quidu      	"57F6897C036E"
+		    Containment 	"By Value"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$8"
+		    quid       	"57F691FA02EB"
+		    supplier   	"Logical View::cadena de responsabilidad::CharacterControllers"
+		    quidu      	"57F68F9201A7"
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)))
+	(object Association "$UNNAMED$9"
+	    quid       	"57F6925F00AB"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$10"
+		    quid       	"57F6926202C7"
+		    supplier   	"Logical View::cadena de responsabilidad::PlatformInputController"
+		    quidu      	"57F68B0000C5"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$11"
+		    quid       	"57F6926202C9"
+		    supplier   	"Logical View::cadena de responsabilidad::FPSInputController"
+		    quidu      	"57F689BC002A"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$12"
+	    quid       	"57F693570341"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$13"
+		    quid       	"57F693580247"
+		    supplier   	"Logical View::cadena de responsabilidad::Characters"
+		    quidu      	"57F68EF80395"
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)
+		(object Role "$UNNAMED$14"
+		    quid       	"57F69358024C"
+		    supplier   	"Logical View::cadena de responsabilidad::FPSInputController"
+		    quidu      	"57F689BC002A"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$15"
+	    quid       	"57F6935B00C2"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$16"
+		    quid       	"57F6935B0313"
+		    supplier   	"Logical View::cadena de responsabilidad::ThirdPersonController"
+		    quidu      	"57F68A160371"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$17"
+		    quid       	"57F6935B0316"
+		    supplier   	"Logical View::cadena de responsabilidad::Characters"
+		    quidu      	"57F68EF80395"
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)))
+	(object Association "$UNNAMED$18"
+	    quid       	"57F694A80093"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$19"
+		    quid       	"57F694A900A8"
+		    supplier   	"Logical View::cadena de responsabilidad::RigidBodyFirstPersonController"
+		    quidu      	"57F68EB70133"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$20"
+		    quid       	"57F694A900AB"
+		    supplier   	"Logical View::cadena de responsabilidad::FirstPersonCharacter"
+		    quidu      	"57F68E690103"
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)))
+	(object Association "$UNNAMED$21"
+	    quid       	"57F6964D021C"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$22"
+		    quid       	"57F6964E00C2"
+		    supplier   	"Logical View::cadena de responsabilidad::PlatformInputController"
+		    quidu      	"57F68B0000C5"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$23"
+		    quid       	"57F6964E00C6"
+		    supplier   	"Logical View::cadena de responsabilidad::CrossPlatformInput"
+		    quidu      	"57F68C8102EE"
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)))
+	(object Association "$UNNAMED$24"
+	    quid       	"57F6967101E1"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$25"
+		    quid       	"57F696730122"
+		    supplier   	"Logical View::cadena de responsabilidad::ButtonHandler"
+		    quidu      	"57F68CD1023C"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$26"
+		    quid       	"57F696730126"
+		    supplier   	"Logical View::cadena de responsabilidad::AxisTouchButton"
+		    quidu      	"57F68CB70190"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$27"
+	    quid       	"57F696820141"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$28"
+		    quid       	"57F69683008D"
+		    supplier   	"Logical View::cadena de responsabilidad::CrossPlatformInputManage"
+		    quidu      	"57F68D38018B"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$29"
+		    quid       	"57F696830090"
+		    supplier   	"Logical View::cadena de responsabilidad::CrossPlatformInput"
+		    quidu      	"57F68C8102EE"
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)))
+	(object Association "inicia la peticion"
+	    quid       	"57F6969A0248"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$30"
+		    quid       	"57F6969B01BD"
+		    supplier   	"Logical View::cadena de responsabilidad::CharacterControllers"
+		    quidu      	"57F68F9201A7"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$31"
+		    quid       	"57F6969B01C1"
+		    supplier   	"Logical View::cadena de responsabilidad::Usuario"
+		    quidu      	"57F688110100")))
+	(object Association "$UNNAMED$32"
+	    quid       	"57F69864020D"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$33"
+		    quid       	"57F69866003B"
+		    supplier   	"Logical View::cadena de responsabilidad::ThirdPersonController"
+		    quidu      	"57F68A160371"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$34"
+		    quid       	"57F69866003F"
+		    supplier   	"Logical View::cadena de responsabilidad::CharacterMotor"
+		    quidu      	"57F6897C036E"
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Main"
+	    quid       	"57F687E3018F"
+	    title      	"Main"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::MouseLook" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(678, 1577)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(553, 1526)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	250
+			justify    	0
+			label      	"MouseLook")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F68EA6014B"
+		    width      	268
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::FirstPersonControl" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(228, 1577)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(42, 1526)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	372
+			justify    	0
+			label      	"FirstPersonControl")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F68E7A0125"
+		    width      	390
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$3" @3
+		    location   	(464, 1494)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F690140050"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$4" @4
+			    Parent_View 	@3
+			    location   	(236, -83)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F69014030F"
+			    client     	@3
+			    supplier   	@1
+			    vertices   	(list Points
+				(464, 1494)
+				(625, 1494)
+				(625, 1514))
+			    line_style 	3
+			    origin_attachment 	(464, 1494)
+			    terminal_attachment 	(625, 1514))
+			(object RoleView "$UNNAMED$5" @5
+			    Parent_View 	@3
+			    location   	(236, -83)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F690140312"
+			    client     	@3
+			    supplier   	@2
+			    vertices   	(list Points
+				(464, 1494)
+				(303, 1494)
+				(303, 1514))
+			    line_style 	3
+			    origin_attachment 	(464, 1494)
+			    terminal_attachment 	(303, 1514))))
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::ThirdPersonUserControl" @6
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1396, 1640)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@6
+			location   	(1163, 1589)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	466
+			justify    	0
+			label      	"ThirdPersonUserControl")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F68BAC0024"
+		    width      	484
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::ThirdPersonCharacter" @7
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1369, 1362)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@7
+			location   	(1156, 1311)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	426
+			justify    	0
+			label      	"ThirdPersonCharacter")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F68DF0028A"
+		    width      	444
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$0" @8
+		    location   	(1391, 1500)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F68FC70086"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$1" @9
+			    Parent_View 	@8
+			    location   	(10, -38)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F68FC701D7"
+			    client     	@8
+			    supplier   	@6
+			    vertices   	(list Points
+				(1391, 1500)
+				(1391, 1576))
+			    line_style 	3
+			    origin_attachment 	(1391, 1500)
+			    terminal_attachment 	(1391, 1576))
+			(object RoleView "$UNNAMED$2" @10
+			    Parent_View 	@8
+			    location   	(10, -38)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F68FC701DA"
+			    client     	@8
+			    supplier   	@7
+			    vertices   	(list Points
+				(1391, 1500)
+				(1391, 1424))
+			    line_style 	3
+			    origin_attachment 	(1391, 1500)
+			    terminal_attachment 	(1391, 1424))))
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::RigidBodyFirstPersonController" @11
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(487, 1737)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@11
+			location   	(186, 1686)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	602
+			justify    	0
+			label      	"RigidBodyFirstPersonController")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F68EB70133"
+		    width      	620
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::FirstPersonCharacter" @12
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(481, 1352)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@12
+			location   	(270, 1301)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	422
+			justify    	0
+			label      	"FirstPersonCharacter")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F68E690103"
+		    width      	440
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$18" @13
+		    location   	(481, 1544)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F694A80093"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$19" @14
+			    Parent_View 	@13
+			    location   	(0, 192)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F694A900A8"
+			    client     	@13
+			    supplier   	@11
+			    vertices   	(list Points
+				(481, 1544)
+				(481, 1674))
+			    line_style 	3
+			    origin_attachment 	(481, 1544)
+			    terminal_attachment 	(481, 1674))
+			(object RoleView "$UNNAMED$20" @15
+			    Parent_View 	@13
+			    location   	(0, 192)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F694A900AB"
+			    client     	@13
+			    supplier   	@12
+			    vertices   	(list Points
+				(481, 1544)
+				(481, 1415))
+			    line_style 	3
+			    origin_attachment 	(481, 1544)
+			    terminal_attachment 	(481, 1415))))
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::FPSInputController" @16
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(528, 896)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@16
+			location   	(336, 815)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	384
+			justify    	0
+			label      	"FPSInputController")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F689BC002A"
+		    compartment 	(object Compartment
+			Parent_View 	@16
+			location   	(336, 876)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	2
+			max_width  	393
+			justify    	1)
+		    width      	402
+		    height     	186
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::ButtonHandler" @17
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2493, 1590)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@17
+			location   	(2349, 1539)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	288
+			justify    	0
+			label      	"ButtonHandler")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F68CD1023C"
+		    width      	306
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::AxisTouchButton" @18
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2049, 1584)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@18
+			location   	(1874, 1533)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	350
+			justify    	0
+			label      	"AxisTouchButton")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F68CB70190"
+		    width      	368
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$24" @19
+		    location   	(2270, 1503)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F6967101E1"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$25" @20
+			    Parent_View 	@19
+			    location   	(212, -137)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F696730122"
+			    client     	@19
+			    supplier   	@17
+			    vertices   	(list Points
+				(2270, 1503)
+				(2498, 1503)
+				(2498, 1527))
+			    line_style 	3
+			    origin_attachment 	(2270, 1503)
+			    terminal_attachment 	(2498, 1527))
+			(object RoleView "$UNNAMED$26" @21
+			    Parent_View 	@19
+			    location   	(212, -137)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F696730126"
+			    client     	@19
+			    supplier   	@18
+			    vertices   	(list Points
+				(2270, 1503)
+				(2035, 1503)
+				(2035, 1521))
+			    line_style 	3
+			    origin_attachment 	(2270, 1503)
+			    terminal_attachment 	(2035, 1521))))
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::PlatformInputController" @22
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2274, 899)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@22
+			location   	(2051, 818)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	446
+			justify    	0
+			label      	"PlatformInputController")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F68B0000C5"
+		    compartment 	(object Compartment
+			Parent_View 	@22
+			location   	(2051, 879)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	2
+			max_width  	393
+			justify    	1)
+		    width      	464
+		    height     	186
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$9" @23
+		    location   	(1389, 775)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F6925F00AB"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$10" @24
+			    Parent_View 	@23
+			    location   	(686, -115)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F6926202C7"
+			    client     	@23
+			    supplier   	@22
+			    vertices   	(list Points
+				(1389, 775)
+				(2273, 775)
+				(2273, 806))
+			    line_style 	3
+			    origin_attachment 	(1389, 775)
+			    terminal_attachment 	(2273, 806))
+			(object RoleView "$UNNAMED$11" @25
+			    Parent_View 	@23
+			    location   	(686, -115)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F6926202C9"
+			    client     	@23
+			    supplier   	@16
+			    vertices   	(list Points
+				(1389, 775)
+				(503, 775)
+				(503, 803))
+			    line_style 	3
+			    origin_attachment 	(1389, 775)
+			    terminal_attachment 	(503, 803))))
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::CrossPlatformInputManage" @26
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2289, 1737)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@26
+			location   	(2030, 1686)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	518
+			justify    	0
+			label      	"CrossPlatformInputManage")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F68D38018B"
+		    width      	536
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::CrossPlatformInput" @27
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2277, 1143)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@27
+			location   	(2085, 1092)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	384
+			justify    	0
+			label      	"CrossPlatformInput")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F68C8102EE"
+		    width      	402
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$21" @28
+		    location   	(2273, 1036)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F6964D021C"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$22" @29
+			    Parent_View 	@28
+			    location   	(-4, -107)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F6964E00C2"
+			    client     	@28
+			    supplier   	@22
+			    vertices   	(list Points
+				(2273, 1036)
+				(2273, 992))
+			    line_style 	3
+			    origin_attachment 	(2273, 1036)
+			    terminal_attachment 	(2273, 992))
+			(object RoleView "$UNNAMED$23" @30
+			    Parent_View 	@28
+			    location   	(-4, -107)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F6964E00C6"
+			    client     	@28
+			    supplier   	@27
+			    vertices   	(list Points
+				(2273, 1036)
+				(2273, 1080))
+			    line_style 	3
+			    origin_attachment 	(2273, 1036)
+			    terminal_attachment 	(2273, 1080))))
+		(object AssociationViewNew "$UNNAMED$27" @31
+		    location   	(2278, 1440)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F696820141"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$28" @32
+			    Parent_View 	@31
+			    location   	(1, 297)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F69683008D"
+			    client     	@31
+			    supplier   	@26
+			    vertices   	(list Points
+				(2278, 1440)
+				(2278, 1674))
+			    line_style 	3
+			    origin_attachment 	(2278, 1440)
+			    terminal_attachment 	(2278, 1674))
+			(object RoleView "$UNNAMED$29" @33
+			    Parent_View 	@31
+			    location   	(1, 297)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F696830090"
+			    client     	@31
+			    supplier   	@27
+			    vertices   	(list Points
+				(2278, 1440)
+				(2278, 1206))
+			    line_style 	3
+			    origin_attachment 	(2278, 1440)
+			    terminal_attachment 	(2278, 1206))))
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::Usuario" @34
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(345, 298)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@34
+			location   	(255, 246)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	180
+			justify    	0
+			label      	"Usuario")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F688110100"
+		    width      	198
+		    height     	128
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::CharacterControllers" @35
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1371, 300)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@35
+			location   	(1166, 219)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	410
+			justify    	0
+			label      	"CharacterControllers")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F68F9201A7"
+		    compartment 	(object Compartment
+			Parent_View 	@35
+			location   	(1166, 280)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	2
+			max_width  	318
+			justify    	1)
+		    width      	428
+		    height     	186
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "inicia la peticion" @36
+		    location   	(800, 299)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @37
+			Parent_View 	@36
+			location   	(800, 240)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	345
+			justify    	0
+			label      	"inicia la peticion"
+			pctDist    	0.500000
+			height     	60
+			orientation 	0)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F6969A0248"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$30" @38
+			    Parent_View 	@36
+			    location   	(455, 1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F6969B01BD"
+			    client     	@36
+			    supplier   	@35
+			    vertices   	(list Points
+				(800, 299)
+				(1157, 299))
+			    line_style 	3
+			    origin_attachment 	(800, 299)
+			    terminal_attachment 	(1157, 299))
+			(object RoleView "$UNNAMED$31" @39
+			    Parent_View 	@36
+			    location   	(455, 1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F6969B01C1"
+			    client     	@36
+			    supplier   	@34
+			    vertices   	(list Points
+				(800, 299)
+				(444, 299))
+			    line_style 	3
+			    origin_attachment 	(800, 299)
+			    terminal_attachment 	(444, 299))))
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::Characters" @40
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(922, 1134)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@40
+			location   	(802, 1083)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	240
+			justify    	0
+			label      	"Characters")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F68EF80395"
+		    width      	258
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$12" @41
+		    location   	(574, 1125)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F693570341"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$13" @42
+			    Parent_View 	@41
+			    location   	(46, 229)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F693580247"
+			    client     	@41
+			    supplier   	@40
+			    vertices   	(list Points
+				(574, 1125)
+				(793, 1125))
+			    line_style 	3
+			    origin_attachment 	(574, 1125)
+			    terminal_attachment 	(793, 1125))
+			(object RoleView "$UNNAMED$14" @43
+			    Parent_View 	@41
+			    location   	(46, 229)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F69358024C"
+			    client     	@41
+			    supplier   	@16
+			    vertices   	(list Points
+				(574, 1125)
+				(491, 1125)
+				(491, 989))
+			    line_style 	3
+			    origin_attachment 	(574, 1125)
+			    terminal_attachment 	(491, 989))))
+		(object InheritView "" @44
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F6948D0211"
+		    client     	@7
+		    supplier   	@40
+		    vertices   	(list Points
+			(1385, 1299)
+			(1385, 1176)
+			(1051, 1176))
+		    line_style 	3
+		    origin_attachment 	(1385, 1299)
+		    terminal_attachment 	(1051, 1176))
+		(object InheritView "" @45
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F690490248"
+		    client     	@12
+		    supplier   	@40
+		    vertices   	(list Points
+			(500, 1289)
+			(500, 1175)
+			(793, 1175))
+		    line_style 	3
+		    origin_attachment 	(500, 1289)
+		    terminal_attachment 	(793, 1175))
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::ThirdPersonController" @46
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1410, 893)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@46
+			location   	(1200, 812)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	420
+			justify    	0
+			label      	"ThirdPersonController")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F68A160371"
+		    compartment 	(object Compartment
+			Parent_View 	@46
+			location   	(1200, 873)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	2
+			max_width  	393
+			justify    	1)
+		    width      	438
+		    height     	186
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$15" @47
+		    location   	(1279, 1124)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F6935B00C2"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$16" @48
+			    Parent_View 	@47
+			    location   	(357, -10)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F6935B0313"
+			    client     	@47
+			    supplier   	@46
+			    vertices   	(list Points
+				(1279, 1124)
+				(1368, 1124)
+				(1368, 986))
+			    line_style 	3
+			    origin_attachment 	(1279, 1124)
+			    terminal_attachment 	(1368, 986))
+			(object RoleView "$UNNAMED$17" @49
+			    Parent_View 	@47
+			    location   	(357, -10)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F6935B0316"
+			    client     	@47
+			    supplier   	@40
+			    vertices   	(list Points
+				(1279, 1124)
+				(1051, 1124))
+			    line_style 	3
+			    origin_attachment 	(1279, 1124)
+			    terminal_attachment 	(1051, 1124))))
+		(object ClassView "Class" "Logical View::cadena de responsabilidad::CharacterMotor" @50
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1367, 565)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@50
+			location   	(1175, 484)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	384
+			justify    	0
+			label      	"CharacterMotor")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F6897C036E"
+		    compartment 	(object Compartment
+			Parent_View 	@50
+			location   	(1175, 545)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	2
+			max_width  	393
+			justify    	1)
+		    width      	402
+		    height     	186
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$6" @51
+		    location   	(1367, 432)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F691FA00D3"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$7" @52
+			    Parent_View 	@51
+			    location   	(-5, 23)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F691FA02E8"
+			    client     	@51
+			    supplier   	@50
+			    vertices   	(list Points
+				(1367, 432)
+				(1367, 472))
+			    line_style 	3
+			    origin_attachment 	(1367, 432)
+			    terminal_attachment 	(1367, 472))
+			(object RoleView "$UNNAMED$8" @53
+			    Parent_View 	@51
+			    location   	(-5, 23)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F691FA02EB"
+			    client     	@51
+			    supplier   	@35
+			    vertices   	(list Points
+				(1367, 432)
+				(1367, 393))
+			    line_style 	3
+			    origin_attachment 	(1367, 432)
+			    terminal_attachment 	(1367, 393))))
+		(object AssociationViewNew "$UNNAMED$32" @54
+		    location   	(1379, 729)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F69864020D"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$33" @55
+			    Parent_View 	@54
+			    location   	(12, 164)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F69866003B"
+			    client     	@54
+			    supplier   	@46
+			    vertices   	(list Points
+				(1379, 729)
+				(1379, 800))
+			    line_style 	3
+			    origin_attachment 	(1379, 729)
+			    terminal_attachment 	(1379, 800))
+			(object RoleView "$UNNAMED$34" @56
+			    Parent_View 	@54
+			    location   	(12, 164)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F69866003F"
+			    client     	@54
+			    supplier   	@50
+			    vertices   	(list Points
+				(1379, 729)
+				(1379, 658))
+			    line_style 	3
+			    origin_attachment 	(1379, 729)
+			    terminal_attachment 	(1379, 658))))
+		(object NoteView @57
+		    location   	(2118, 187)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@57
+			location   	(1733, 96)
+			fill_color 	13434879
+			nlines     	3
+			max_width  	734
+			justify    	1
+			label      	"A través de esta interfaz se inicia el proceso de ejecutar un movimiento según objeto y tipo de movimiento")
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	794
+		    height     	194)
+		(object AttachView "" @58
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@35
+		    supplier   	@57
+		    vertices   	(list Points
+			(1328, 207)
+			(1328, 159)
+			(1720, 159))
+		    line_style 	3
+		    origin_attachment 	(1585, 245)
+		    terminal_attachment 	(1720, 245))
+		(object NoteView @59
+		    location   	(647, 562)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@59
+			location   	(315, 475)
+			fill_color 	13434879
+			nlines     	3
+			max_width  	628
+			justify    	1
+			label      	"Se encarga de direccionar las peticiones de acuerdo a su naturaleza.")
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	688
+		    height     	187)
+		(object AttachView "" @60
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@59
+		    supplier   	@50
+		    vertices   	(list Points
+			(991, 562)
+			(1165, 563))
+		    line_style 	0)
+		(object NoteView @61
+		    location   	(2235, 556)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@61
+			location   	(1957, 478)
+			fill_color 	13434879
+			nlines     	3
+			max_width  	521
+			justify    	1
+			label      	"Se encarga de las solicitudes de las que es responsable.")
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	581
+		    height     	169)
+		(object AttachView "" @62
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@16
+		    supplier   	@61
+		    vertices   	(list Points
+			(597, 803)
+			(597, 734)
+			(1773, 734)
+			(1773, 528)
+			(1944, 528))
+		    line_style 	3
+		    origin_attachment 	(597, 803)
+		    terminal_attachment 	(1944, 528))
+		(object AttachView "" @63
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@46
+		    supplier   	@61
+		    vertices   	(list Points
+			(1629, 890)
+			(1801, 890)
+			(1801, 550)
+			(1944, 550))
+		    line_style 	3
+		    origin_attachment 	(1629, 888)
+		    terminal_attachment 	(1947, 640))
+		(object AttachView "" @64
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@22
+		    supplier   	@61
+		    vertices   	(list Points
+			(2335, 806)
+			(2335, 640))
+		    line_style 	3
+		    origin_attachment 	(2335, 806)
+		    terminal_attachment 	(2335, 640))))))

@@ -1,0 +1,778 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	0)
+
+(object Class_Category "estrategia"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"57F59A1703A7"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "Script"
+	    quid       	"57F595A401F7")
+	(object Class "Usuario"
+	    quid       	"57F593C503A8")
+	(object Class "Traslacion"
+	    quid       	"57F59445002E")
+	(object Class "Objeto3D"
+	    quid       	"57F59598009A")
+	(object Class "Rotacion"
+	    quid       	"57F5944B0055")
+	(object Class "JavaScript"
+	    quid       	"57F595B003B6"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"57F595DE033C"
+		    supplier   	"Logical View::estrategia::Script"
+		    quidu      	"57F595A401F7")))
+	(object Class "Interaccion"
+	    quid       	"57F594540284")
+	(object Class "Comportamiento"
+	    quid       	"57F5943D0350"
+	    used_nodes 	(list uses_relationship_list
+		(object Uses_Relationship
+		    quid       	"57F59906021A"
+		    supplier   	"Logical View::estrategia::Objeto3D"
+		    quidu      	"57F59598009A")))
+	(object Class "C#"
+	    quid       	"57F595AB019E"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"57F595E303C0"
+		    supplier   	"Logical View::estrategia::Script"
+		    quidu      	"57F595A401F7"))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Main"
+	    quid       	"57F5937801B7"
+	    title      	"Main"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::estrategia::C\\#" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1967, 1342)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(1849, 1268)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	236
+			justify    	0
+			label      	"C#")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F595AB019E"
+		    width      	254
+		    height     	172
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::estrategia::JavaScript" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1483, 1354)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(1365, 1280)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	236
+			justify    	0
+			label      	"JavaScript")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F595B003B6"
+		    width      	254
+		    height     	172
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object NoteView @3
+		    location   	(1986, 275)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(1482, 209)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	972
+			justify    	1
+			label      	"Contexto, configura la estrategia para definir los comportamientos y la interacción con los objetos.")
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	1032
+		    height     	144)
+		(object NoteView @4
+		    location   	(687, 644)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(312, 547)
+			fill_color 	13434879
+			nlines     	3
+			max_width  	715
+			justify    	1
+			label      	"Estrategia, a partir de éste se invoca los componentes necesarios para llevar a cabo la estrategia concreta")
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	775
+		    height     	206)
+		(object ClassView "Class" "Logical View::estrategia::Usuario" @5
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1279, 470)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(1161, 396)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	236
+			justify    	0
+			label      	"Usuario")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F593C503A8"
+		    width      	254
+		    height     	172
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AttachView "" @6
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@5
+		    supplier   	@3
+		    vertices   	(list Points
+			(1268, 384)
+			(1268, 277)
+			(1469, 277))
+		    line_style 	3
+		    origin_attachment 	(1268, 384)
+		    terminal_attachment 	(1469, 277))
+		(object NoteView @7
+		    location   	(2050, 634)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@7
+			location   	(1609, 562)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	846
+			justify    	1
+			label      	"Estrategia concreta, se implementa el algoritmo segun la necesidad de la estrategia.")
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	906
+		    height     	157)
+		(object NoteView @8
+		    location   	(359, 969)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@8
+			location   	(87, 869)
+			fill_color 	13434879
+			nlines     	4
+			max_width  	508
+			justify    	1
+			label      	"Según la estrategia el objeto responde a las necesidades en tiempo de ejecución.")
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	568
+		    height     	213)
+		(object ClassView "Class" "Logical View::estrategia::Traslacion" @9
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(437, 1480)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@9
+			location   	(319, 1406)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	236
+			justify    	0
+			label      	"Traslacion")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F59445002E"
+		    width      	254
+		    height     	172
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::estrategia::Rotacion" @10
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(753, 1478)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@10
+			location   	(635, 1404)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	236
+			justify    	0
+			label      	"Rotacion")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F5944B0055"
+		    width      	254
+		    height     	172
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::estrategia::Interaccion" @11
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1056, 1481)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@11
+			location   	(937, 1407)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	238
+			justify    	0
+			label      	"Interaccion")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F594540284"
+		    width      	256
+		    height     	172
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::estrategia::Comportamiento" @12
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1279, 819)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@12
+			location   	(1117, 745)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	324
+			justify    	0
+			label      	"Comportamiento")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F5943D0350"
+		    width      	342
+		    height     	172
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "" @13
+		    location   	(1279, 644)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F596470092"
+		    roleview_list 	(list RoleViews
+			(object RoleView "" @14
+			    Parent_View 	@13
+			    location   	(198, 422)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F596490183"
+			    client     	@13
+			    supplier   	@12
+			    vertices   	(list Points
+				(1279, 644)
+				(1279, 732))
+			    line_style 	0)
+			(object RoleView "" @15
+			    Parent_View 	@13
+			    location   	(198, 422)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F596490185"
+			    client     	@13
+			    supplier   	@5
+			    vertices   	(list Points
+				(1279, 644)
+				(1279, 556))
+			    line_style 	0)))
+		(object AttachView "" @16
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@4
+		    supplier   	@12
+		    vertices   	(list Points
+			(706, 747)
+			(706, 843)
+			(1108, 843))
+		    line_style 	3
+		    origin_attachment 	(1074, 740)
+		    terminal_attachment 	(1108, 740))
+		(object ClassView "Class" "Logical View::estrategia::Script" @17
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1721, 1045)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@17
+			location   	(1603, 971)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	236
+			justify    	0
+			label      	"Script")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F595A401F7"
+		    width      	254
+		    height     	172
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @18
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F595DE033C"
+		    client     	@2
+		    supplier   	@17
+		    vertices   	(list Points
+			(1406, 1268)
+			(1406, 1092)
+			(1594, 1092))
+		    line_style 	3
+		    origin_attachment 	(1406, 1268)
+		    terminal_attachment 	(1594, 1092))
+		(object InheritView "" @19
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F595E303C0"
+		    client     	@1
+		    supplier   	@17
+		    vertices   	(list Points
+			(1971, 1256)
+			(1971, 1089)
+			(1848, 1089))
+		    line_style 	3
+		    origin_attachment 	(1971, 1256)
+		    terminal_attachment 	(1848, 1089))
+		(object AssociationViewNew "" @20
+		    location   	(1643, 838)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F598AB01EC"
+		    roleview_list 	(list RoleViews
+			(object RoleView "" @21
+			    Parent_View 	@20
+			    location   	(511, 160)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F598AD0127"
+			    client     	@20
+			    supplier   	@17
+			    vertices   	(list Points
+				(1643, 838)
+				(1715, 838)
+				(1715, 959))
+			    line_style 	3
+			    origin_attachment 	(1643, 838)
+			    terminal_attachment 	(1715, 959))
+			(object RoleView "" @22
+			    Parent_View 	@20
+			    location   	(511, 160)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F598AD0129"
+			    client     	@20
+			    supplier   	@12
+			    vertices   	(list Points
+				(1643, 838)
+				(1450, 838))
+			    line_style 	3
+			    origin_attachment 	(1643, 838)
+			    terminal_attachment 	(1450, 838))))
+		(object ClassView "Class" "Logical View::estrategia::Objeto3D" @23
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(725, 1217)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@23
+			location   	(607, 1143)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	236
+			justify    	0
+			label      	"Objeto3D")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57F59598009A"
+		    width      	254
+		    height     	172
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object UsesView "" @24
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F59906021A"
+		    client     	@12
+		    supplier   	@23
+		    vertices   	(list Points
+			(1107, 905)
+			(1107, 935)
+			(703, 935)
+			(703, 1131))
+		    line_style 	3
+		    origin_attachment 	(1107, 905)
+		    terminal_attachment 	(703, 1131))
+		(object AssociationViewNew "" @25
+		    location   	(406, 1268)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F5993001BA"
+		    roleview_list 	(list RoleViews
+			(object RoleView "" @26
+			    Parent_View 	@25
+			    location   	(-172, 192)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F599330331"
+			    client     	@25
+			    supplier   	@9
+			    vertices   	(list Points
+				(406, 1268)
+				(406, 1394))
+			    line_style 	3
+			    origin_attachment 	(406, 1268)
+			    terminal_attachment 	(406, 1394))
+			(object RoleView "" @27
+			    Parent_View 	@25
+			    location   	(-172, 192)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F599330333"
+			    client     	@25
+			    supplier   	@23
+			    vertices   	(list Points
+				(406, 1268)
+				(406, 1208)
+				(598, 1208))
+			    line_style 	3
+			    origin_attachment 	(406, 1268)
+			    terminal_attachment 	(598, 1208))))
+		(object AssociationViewNew "" @28
+		    location   	(745, 1347)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F5993D0164"
+		    roleview_list 	(list RoleViews
+			(object RoleView "" @29
+			    Parent_View 	@28
+			    location   	(167, 271)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F5993D02C0"
+			    client     	@28
+			    supplier   	@10
+			    vertices   	(list Points
+				(745, 1347)
+				(745, 1392))
+			    line_style 	3
+			    origin_attachment 	(745, 1347)
+			    terminal_attachment 	(745, 1392))
+			(object RoleView "" @30
+			    Parent_View 	@28
+			    location   	(167, 271)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F5993D02C2"
+			    client     	@28
+			    supplier   	@23
+			    vertices   	(list Points
+				(745, 1347)
+				(745, 1303))
+			    line_style 	3
+			    origin_attachment 	(745, 1347)
+			    terminal_attachment 	(745, 1303))))
+		(object AssociationViewNew "" @31
+		    location   	(1021, 1215)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F59941002E"
+		    roleview_list 	(list RoleViews
+			(object RoleView "" @32
+			    Parent_View 	@31
+			    location   	(443, 139)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F5994201FE"
+			    client     	@31
+			    supplier   	@11
+			    vertices   	(list Points
+				(1021, 1215)
+				(1081, 1215)
+				(1081, 1395))
+			    line_style 	3
+			    origin_attachment 	(1021, 1215)
+			    terminal_attachment 	(1081, 1395))
+			(object RoleView "" @33
+			    Parent_View 	@31
+			    location   	(443, 139)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F599420200"
+			    client     	@31
+			    supplier   	@23
+			    vertices   	(list Points
+				(1021, 1215)
+				(852, 1215))
+			    line_style 	3
+			    origin_attachment 	(1021, 1215)
+			    terminal_attachment 	(852, 1215))))
+		(object AttachView "" @34
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@8
+		    supplier   	@23
+		    vertices   	(list Points
+			(337, 1075)
+			(337, 1170)
+			(598, 1170))
+		    line_style 	3
+		    origin_attachment 	(620, 1075)
+		    terminal_attachment 	(620, 1131))
+		(object AssociationViewNew "" @35
+		    location   	(1123, 1021)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57F599AA0175"
+		    roleview_list 	(list RoleViews
+			(object RoleView "" @36
+			    Parent_View 	@35
+			    location   	(398, -196)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F599AB035E"
+			    client     	@35
+			    supplier   	@17
+			    vertices   	(list Points
+				(1123, 1021)
+				(1594, 1021))
+			    line_style 	3
+			    origin_attachment 	(1123, 1021)
+			    terminal_attachment 	(1594, 1021))
+			(object RoleView "" @37
+			    Parent_View 	@35
+			    location   	(398, -196)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57F599AB0360"
+			    client     	@35
+			    supplier   	@23
+			    vertices   	(list Points
+				(1123, 1021)
+				(762, 1021)
+				(762, 1131))
+			    line_style 	3
+			    origin_attachment 	(1123, 1021)
+			    terminal_attachment 	(762, 1131))))
+		(object AttachView "" @38
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@17
+		    supplier   	@7
+		    vertices   	(list Points
+			(1848, 1028)
+			(2025, 1028)
+			(2025, 712))
+		    line_style 	3
+		    origin_attachment 	(1722, 959)
+		    terminal_attachment 	(1722, 712))
+		(object Label @39
+		    location   	(147, 109)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			bold       	TRUE
+			italics    	FALSE
+			underline  	TRUE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    nlines     	1
+		    max_width  	1225
+		    justify    	1
+		    label      	"Patrón de estrategia: Interacción del usuario")))))
